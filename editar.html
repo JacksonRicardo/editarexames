@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Laudo Responsivo</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Área do Laudo -->
+            <div class="col-12 col-md-8">
+                <div class="card mb-4">
+                    <!-- Cabeçalho do Laudo (destaque) -->
+                    <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5>Charles José da Silva</h5>
+                            <h6 class="text-muted">CT - TC Crânio ou sela turcica ou órbitas</h6>
+                        </div>
+                        <button class="btn btn-success rounded-pill">
+                            <i class="bi bi-check2"></i> Laudo Assinado
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            RAIOX: COLUNA DORSAL<br>
+                            <br>
+                            Eixo dorsal normal.<br>
+                            Corpos vertebrais de forma, densidade, estrutura e contornos normais.<br>
+                            Espaços discais conservados.<br>
+                            Pedículos, istmos, lâminas, apófises articulares e transversas sem alterações.<br>
+                            Articulações costo-vertebrais de aspecto anatômico.<br>
+                            <br>
+                            RAIOX: COLUNA LOMBOSSACRA<br>
+                            <br>
+                            Eixo lombar normal.<br>
+                            Corpos vertebrais de forma, densidade, estrutura e contornos normais.<br>
+                            Espaços intervertebrais conservados.<br>
+                            Pedículos, istmos, lâminas, apófises articulares e transversas sem alterações.<br>
+                            Articulações interapofisárias normais.<br>
+                            Articulações sacroilíacas de aspecto anatômico.
+                        </p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-danger rounded-pill">Bloquear Laudo</button>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-primary rounded-pill">Clonar Laudo</button>
+                            <button class="btn btn-primary rounded-pill">Criar Adendo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Área de Modelos de Laudo e Anexos -->
+            <div class="col-12 col-md-4">
+                <!-- Caixa de Ações (Imprimir e Protocolo) -->
+                <div class="bg-white p-3 rounded shadow-sm mb-4 text-center">
+                    <button class="btn btn-primary rounded-pill me-2">Imprimir</button>
+                    <button class="btn btn-primary rounded-pill">Protocolo</button>
+                </div>
+
+                <!-- Modelos de Laudo -->
+                <div class="card mb-4">
+                    <div class="card-header">Modelos de Laudo</div>
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Pesquisar Modelo" aria-label="Pesquisar Modelo" aria-describedby="basic-addon1">
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">CR
+                                <ul>
+                                    <li>ABDOMEN</li>
+                                    <li>CABEÇA E PESCOÇO</li>
+                                    <li>COLUNAS</li>
+                                    <li>CONTRASTADOS</li>
+                                    <li>MMIII</li>
+                                    <li>MVISS</li>
+                                    <li>TÓRAX</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Anexos -->
+                <div class="card">
+                    <div class="card-body text-center">
+                        <!-- Ícones Clicáveis Acima do Título "Anexos" -->
+                        <div class="d-flex justify-content-around mb-3">
+                            <button class="btn btn-outline-secondary btn-sm">
+                                <i class="bi bi-file-earmark-plus fs-3"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm">
+                                <i class="bi bi-upload fs-3"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm">
+                                <i class="bi bi-folder fs-3"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm">
+                                <i class="bi bi-cloud-arrow-down fs-3"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm">
+                                <i class="bi bi-trash fs-3"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-header text-start">Anexos</div>
+                    <div class="card-body">
+                        <!-- Exame 1 -->
+                        <div class="bg-info bg-opacity-10 text-dark p-3 rounded mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-file-earmark-text me-2"></i>Exame</span>
+                                <div>
+                                    <button class="btn btn-primary btn-sm rounded me-2">
+                                        <i class="bi bi-eye text-white"></i>
+                                    </button>
+                                    <button class="btn btn-primary btn-sm rounded">
+                                        <i class="bi bi-download text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Exame 2 -->
+                        <div class="bg-info bg-opacity-10 text-dark p-3 rounded mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-file-earmark-text me-2"></i>Exame 2</span>
+                                <div>
+                                    <button class="btn btn-primary btn-sm rounded me-2">
+                                        <i class="bi bi-eye text-white"></i>
+                                    </button>
+                                    <button class="btn btn-primary btn-sm rounded">
+                                        <i class="bi bi-download text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Imagem 4 -->
+                        <div class="bg-info bg-opacity-10 text-dark p-3 rounded mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-file-earmark-image me-2"></i>Imagem 4</span>
+                                <div>
+                                    <button class="btn btn-primary btn-sm rounded me-2">
+                                        <i class="bi bi-eye text-white"></i>
+                                    </button>
+                                    <button class="btn btn-primary btn-sm rounded">
+                                        <i class="bi bi-download text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>
